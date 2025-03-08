@@ -11,7 +11,8 @@ from googleapiclient.discovery import build
 from groq import Groq
 
 # Define Gmail API scope
-SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
+#SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
+SCOPES = ["https://mail.google.com/"]
 CREDENTIALS_FILE = "client_secret_667390996187-kkb8lgruch34ka6u4mk1enu4o1jchp6b.apps.googleusercontent.com.json"
 TOKEN_FILE = "new_token.json"
 
@@ -59,7 +60,9 @@ TOKEN_FILE = "new_token.json"
 
 
 # Define the scope for Gmail API access
-SCOPES = ['https://www.googleapis.com/auth/gmail.modify']
+#SCOPES = ['https://www.googleapis.com/auth/gmail.modify']
+SCOPES = ["https://mail.google.com/"]
+
 
 # Set the paths for credentials and token file
 CREDENTIALS_FILE = "client_secret_667390996187-kkb8lgruch34ka6u4mk1enu4o1jchp6b.apps.googleusercontent.com.json"
