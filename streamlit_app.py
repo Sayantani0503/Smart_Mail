@@ -1,5 +1,5 @@
 import streamlit as st
-from email_functions import get_recent_emails, llama_call  # Importing your email processing module
+from email_functions import get_email, llama_call  # Importing your email processing module
 
 # Set up Streamlit page
 st.set_page_config(page_title="Email Assistant", page_icon="📧", layout="wide")
@@ -20,7 +20,7 @@ if page == "📥 Inbox":
     st.header("📥 Your Emails")
     
     # Fetch emails using get_email function
-    emails = get_recent_emails()
+    emails = get_email()
     
     if emails:
         for mail in emails:
