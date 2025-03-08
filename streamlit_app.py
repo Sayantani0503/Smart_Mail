@@ -1,5 +1,5 @@
 import streamlit as st
-from Emailfunctions import get_recent_emails, llama_call  # Importing your email processing module
+from email_functions import get_recent_emails, llama_call  # Importing your email processing module
 
 # Set up Streamlit page
 st.set_page_config(page_title="Email Assistant", page_icon="📧", layout="wide")
